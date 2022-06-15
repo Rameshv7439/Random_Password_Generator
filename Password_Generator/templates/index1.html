@@ -1,0 +1,39 @@
+ {% extends 'base1.html' %}
+{% load static %}
+{% block content %}
+        {% if message %}
+<script>
+alert("{{ message }}")
+</script>
+    {% endif %}
+    <!-- END nav -->
+
+    <section class="home-slider owl-carousel img" style="background-image: url({% static 'images/password1.jpg' %});">
+      <div >
+      	<div class="overlay"></div>
+        <div class="container">
+          <div >
+
+{#            <div class="col-md-6 col-sm-12 ftco-animate">#}
+{#            	<span class="subheading">Delicious</span>#}
+{#              <h1 class="mb-4">Italian Cuizine</h1>#}
+{#              <p class="mb-4 mb-md-5">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>#}
+              <div style="padding-top: 500px;padding-left: 650px;"><p><a href="password1/" class="btn btn-primary p-3 px-xl-4 py-xl-3" style="width: 500px;">Generatre Password</a></p></div>
+{#            </div>#}
+
+{#            <div class="col-md-6 ftco-animate">#}
+
+{#            	<img src="{% static 'images/password.png' %}" class="img-fluid" alt="">#}
+{#            </div>#}
+
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    {% endblock %}
+
+
+
